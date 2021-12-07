@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Player : MonoBehaviour
 {
@@ -11,7 +13,6 @@ public class Player : MonoBehaviour
     public int health,vidafull;
     public int custovida;
     
-
     void Start()
     {
         
@@ -38,6 +39,7 @@ public class Player : MonoBehaviour
             if (health<=0) 
             {
                 Destroy(gameObject);
+                
             }
                 
         }

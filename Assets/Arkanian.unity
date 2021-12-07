@@ -238,7 +238,7 @@ MonoBehaviour:
   mage: {fileID: 2595167463192943189, guid: 50b4a929c5c69234983f2872b730579c, type: 3}
   spawnerMagePos: {fileID: 11801257}
   movespeed: 1.34
-  mana: 10
+  mana: 100
   manatual: 10
   customagia: 1
 --- !u!1001 &14076505
@@ -6178,9 +6178,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movespeed: 4
-  health: 3
-  vidafull: 46
-  custovida: 3
+  health: 10
+  vidafull: 10
+  custovida: 1
 --- !u!212 &1524846966
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6516,7 +6516,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 61fd09dd675ee5946a00399bb4a76ac7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
