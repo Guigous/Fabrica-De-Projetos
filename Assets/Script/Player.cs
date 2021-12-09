@@ -12,7 +12,9 @@ public class Player : MonoBehaviour
     [SerializeField] float movespeed;
     public int health,vidafull;
     public int custovida;
-    
+    public GameObject gameover;
+
+
     void Start()
     {
         
@@ -38,7 +40,8 @@ public class Player : MonoBehaviour
             }
             if (health<=0) 
             {
-                Destroy(gameObject);
+                gameObject.SetActive(false);
+                gameover.SetActive(true);
                 
             }
                 
