@@ -534,6 +534,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 777393884, guid: 82d122a202896a549a7173818937ae31, type: 3}
+      propertyPath: m_Volume
+      value: 0.419
+      objectReference: {fileID: 0}
     - target: {fileID: 1985645700, guid: 82d122a202896a549a7173818937ae31, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -974,6 +978,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 43348607}
     m_Modifications:
+    - target: {fileID: 11580449786809701, guid: 190b06bfc06158d4d81090acd3298c9f,
+        type: 3}
+      propertyPath: speed
+      value: 3.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 11580449786809701, guid: 190b06bfc06158d4d81090acd3298c9f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 11580449786809702, guid: 190b06bfc06158d4d81090acd3298c9f,
         type: 3}
       propertyPath: m_CollisionDetection
@@ -23716,7 +23730,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7792208, y: 1}
+    m_SensorSize: {x: 1.7784201, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
