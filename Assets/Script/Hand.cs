@@ -9,6 +9,7 @@ public class Hand : MonoBehaviour
     [SerializeField] float movespeed;
     public float mana,manatual;
     public float  customagia = 10;
+    public float manaregen = 1f;
     void Start()
     {
        
@@ -34,6 +35,14 @@ public class Hand : MonoBehaviour
             manatual = manatual - customagia;
             
         }
+       if(manatual < 50)
+        {
+            InvokeRepeating("ManaRegen", 1, 1);
+        }
+       if(manatual >= 50)
+        {
+            CancelInvoke("ManaRegen");
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -43,4 +52,10 @@ public class Hand : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    private void ManaRegen()
+    {
+        manatual += manaregen;
+    }
+    
+   
 }
