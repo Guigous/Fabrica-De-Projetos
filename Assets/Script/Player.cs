@@ -15,18 +15,18 @@ public class Player : MonoBehaviour
     public GameObject gameover;
     private bool m_FacingRight = true;
 
-    void Start()
-    {
-        
-    }
+    public Rigidbody2D rigidbody;
 
-    // Update is called once per frame
+        // Update is called once per frame
     void Update()
     {
-
         move.x = Input.GetAxis("Horizontal");
         move.y = Input.GetAxis("Vertical");
-        transform.Translate(move * Time.deltaTime * movespeed);
+
+        rigidbody.AddForce(move * Time.deltaTime * movespeed, ForceMode2D.Force);
+
+        rigidbody.velocity = rigidbody.velocity / 1.0025f;
+
         if (move.x > 0 && !m_FacingRight)
         {
             // ... flip the player.
@@ -59,19 +59,24 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("enemy"))
         {
-            Debug.Log(health);
             if (health > 0 )
             {
                 health -= custovida;
             }
-            if (health<=0) 
+
+            if (health <= 0)
             {
-                gameObject.SetActive(false);
-                gameover.SetActive(true);
-                
+                Kill();
             }
-                
         }
+    }
+
+    public void Kill()
+    {
+        health = 0;
+
+        gameover.SetActive(true);
+        gameObject.SetActive(false);
     }
 }
 

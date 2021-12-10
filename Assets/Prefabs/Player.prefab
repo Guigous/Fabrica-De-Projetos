@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 11580449786809700}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 11580449786809707}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.54, y: -1.5, z: 0.34255147}
   m_LocalScale: {x: 0.089005, y: 0.089005, z: 0.089005}
   m_Children:
@@ -101,11 +101,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecd1c0828d3cd354aa228853bf753cc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 4
+  movespeed: 100
   health: 10
   vidafull: 10
   custovida: 1
   gameover: {fileID: 0}
+  rigidbody: {fileID: 11580449786809702}
 --- !u!50 &11580449786809702
 Rigidbody2D:
   serializedVersion: 4

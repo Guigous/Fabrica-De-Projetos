@@ -8,6 +8,8 @@ public class NewScene : MonoBehaviour
 
    public void Loadscene(string sceneName)
     {
+        Debug.Log("???");
+
         SceneManager.LoadScene(sceneName);
     }
 }
