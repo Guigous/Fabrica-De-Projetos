@@ -21,3 +21,6 @@ Fabrica II Equipe DRIN TIN
 • Uma previsão de cronograma e orçamento do projeto; Uma reunião toda quinta-feira.
 
 • Qual objetivo de desenvolvimento sustentável da ONU foi utilizado no projeto. Erradicação da Pobreza, Água Potável e Saneamento.
+
+
+DGG [Game Design Document](https://docs.google.com/document/d/1c_iHUNpUw7_Jt8GeaODTjHg_XWlb4IDHrbM9hfIO4Ac/edit?usp=sharing).
