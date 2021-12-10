@@ -5,9 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class NewScene : MonoBehaviour
 {
-    
-
-
 
    public void Loadscene(string sceneName)
     {

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SlimeBoss : MonoBehaviour
 {
@@ -115,6 +116,7 @@ public class SlimeBoss : MonoBehaviour
         }
 
         //FAZ ALGO QUANDO O BOSS MORRER
+        SceneManager.LoadScene("Agradecimentos");
     }
 
     private void SpawnEnemies()
