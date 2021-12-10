@@ -534,32 +534,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1350655752, guid: 82d122a202896a549a7173818937ae31, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1350655753, guid: 82d122a202896a549a7173818937ae31, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 1985645700, guid: 82d122a202896a549a7173818937ae31, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1285178763}
-    - target: {fileID: 1985645700, guid: 82d122a202896a549a7173818937ae31, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Loadscene
-      objectReference: {fileID: 0}
     - target: {fileID: 1905075948370912098, guid: 82d122a202896a549a7173818937ae31,
         type: 3}
       propertyPath: hand
       value: 
       objectReference: {fileID: 440062351}
-    - target: {fileID: 1905075948370912101, guid: 82d122a202896a549a7173818937ae31,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -33.100006
-      objectReference: {fileID: 0}
     - target: {fileID: 1905075948497920369, guid: 82d122a202896a549a7173818937ae31,
         type: 3}
       propertyPath: player
@@ -685,16 +668,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 952521365}
-    - target: {fileID: 1905075949005838507, guid: 82d122a202896a549a7173818937ae31,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 53
-      objectReference: {fileID: 0}
-    - target: {fileID: 1905075949005838507, guid: 82d122a202896a549a7173818937ae31,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1869315837
-      objectReference: {fileID: 0}
     - target: {fileID: 1905075949005838511, guid: 82d122a202896a549a7173818937ae31,
         type: 3}
       propertyPath: m_Name
@@ -1001,6 +974,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 43348607}
     m_Modifications:
+    - target: {fileID: 11580449786809702, guid: 190b06bfc06158d4d81090acd3298c9f,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 11580449786809704, guid: 190b06bfc06158d4d81090acd3298c9f,
         type: 3}
       propertyPath: m_RootOrder
@@ -1056,12 +1034,28 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11580449786809706, guid: 190b06bfc06158d4d81090acd3298c9f,
+        type: 3}
+      propertyPath: gameover
+      value: 
+      objectReference: {fileID: 777393880}
+    - target: {fileID: 11580449786809706, guid: 190b06bfc06158d4d81090acd3298c9f,
+        type: 3}
+      propertyPath: movespeed
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 11580449786809707, guid: 190b06bfc06158d4d81090acd3298c9f,
         type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 11580450689945268, guid: 190b06bfc06158d4d81090acd3298c9f,
+        type: 3}
+      propertyPath: manaregen
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1913338890, guid: 190b06bfc06158d4d81090acd3298c9f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 190b06bfc06158d4d81090acd3298c9f, type: 3}
 --- !u!4 &353428244 stripped
 Transform:
@@ -6102,6 +6096,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bd7b41600416b54395bf9936a05dc8e, type: 3}
+--- !u!1 &777393880 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1350655752, guid: 82d122a202896a549a7173818937ae31,
+    type: 3}
+  m_PrefabInstance: {fileID: 175220395}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &797011429
 GameObject:
   m_ObjectHideFlags: 0
@@ -22609,7 +22609,7 @@ MonoBehaviour:
   bossHealth: 100
   bossResistance: 5
   spawnEnemyDelay: 5
-  suckingForce: 1000
+  suckingForce: 500
   suckingDelay: 5
   spawnPoints:
   - occupied: {fileID: 0}
@@ -23716,7 +23716,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7784201, y: 1}
+    m_SensorSize: {x: 1.7792208, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
